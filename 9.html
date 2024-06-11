@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+        border: 3px solid black;
+        margin: 10px;
+        min-height: 100px;
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .sidebar{
+        padding-top: 5px;
+        max-width: 200px;
+
+    }
+    a{
+        background: rgb(244, 114, 114);
+        padding: 7px;
+        text-align: center;
+        margin: 0px;
+        text-decoration: none;
+        color: black;
+        max-width: 200px;
+        display: block;
+    }
+    .scroll{
+        visibility: hidden;
+        max-width: 200px;
+        max-height: 50px;
+        overflow: auto ;
+    }
+    .scroll:target{
+        visibility: visible;
+        opacity: 1;
+        max-height: 150px;
+        
+    }
+    .option{
+       
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(245, 238, 238);
+        display: block;
+
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="sidebar">
+             <a href="#scroll">Hover TO View Options</a>
+             <div class="scroll" id="scroll">
+             <a href="#" class="option option1">Option1</a>
+             <a href="#" class="option option1">Option2</a>
+             <a href="#" class="option option1">Option3</a>
+             <a href="#" class="option option1">Option4</a>
+             <a href="#" class="option option1">Option5</a>
+             <a href="#" class="option option1">Option6</a>
+             <a href="#" class="option option1">Option7</a>
+             <a href="#" class="option option1">Option8</a>
+             <a href="#" class="option option1">Option9</a>
+             <a href="#" class="option option1">Option10</a>
+             </div>
+
+        </div>
+    </div>
+</body>
+</html>

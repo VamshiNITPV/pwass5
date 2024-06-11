@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <style>
+     .outer{
+        border: 5px solid black;
+        margin: 50px;
+    }
+    .box{
+        width: 200px;
+        height: 300px;
+        text-align: center;
+    }
+    
+    .box-1:hover{
+        z-index: 3;
+    }
+    .box-2:hover{
+        z-index: 2;
+    }
+    .box-3:hover{
+        z-index: 1;
+    }
+    .box-1{
+        background-color: rgb(61, 128, 235);
+        position: relative;
+        margin-left: 20px;
+      
+    }
+    .box-2{
+        background-color:rgb(41, 151, 41);
+        position: relative;
+        margin-left: 20px;
+        left: 50px;
+        bottom: 250px;
+    }
+    .box-3{
+        background-color:rgb(166, 168, 8);
+        position: relative;
+        margin-left: 20px;
+        left: 100px;
+        bottom: 500px;
+    }
+    img{
+        margin: auto;
+        display: block;
+        height: 150px;
+        padding-top: 50px;
+        border-radius: 40%;
+    }
+    
+   </style>
+    <div class="outer">
+        <p><h1>Hover To Unveil The Pokemon</h1></p>
+        <div class="box box-1">Card 1
+            <img src="pokimon1.jpg" alt="" width="150px">
+        </div>
+        <div class="box box-2">Card 2
+            <img src="pokimon2.jpg" alt="" width="150px">
+        </div>
+        <div class="box box-3">Card 3
+            <img src="pokimon3.jpg" alt="" width="150px">
+        </div>
+    </div>
+    
+</body>
+</html>
